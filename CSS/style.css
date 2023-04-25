@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+  
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+   /* si uso una fuente personalizada, armar un font-face por cada tipo de font (bold /italic/....   */
+
+   @font-face {
+    font-family: 'font-jms-Heavy';
+    src: url('objectSans/PPObjectsSans-Heavy.ttf');
+   }
+   @font-face {
+    font-family: 'font-jms-HeavySlanted';
+    src: url('objectSans/PPObjectsSans-HeavySlanted.ttf');
+   }
+   @font-face {
+    font-family: 'font-jms-Regular';
+    src: url('objectSans/PPObjectsSans-Regular.ttf');
+   }
+   @font-face {
+    font-family: 'font-jms-Slanted';
+    src: url('objectSans/PPObjectsSans-Slanted.ttf');
+   }
+/* fin fonts ================================================================= */
+
+/* Media Queries Pantalla SM ================================================= */
+@media (max-width: 768px) {
+    #eslogan {
+        width: 80%;
+    }
+   
+    .proyectos-fila {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* =========================================================================== */
+/* Header */
+/*width: 90%;*/
+/* Activar flexbox */
+/*
+li {
+    border: 1px solid #fff;
+    background-color: yellow;
+    display: flex;
+   justify-content: space-around;
+}
+*/
+.verde-jms {
+    color:rgb(34, 217, 145) ;
+}
+.negro-jms {
+    color: rgb(29,29,27);
+}
+.gris-jms {
+    color: rgb(184, 179, 174);
+}
+.blanco-jms {
+    color: rgb(255, 255, 255);
+}
+
+.grid-container {
+   height: 100vh;    /* todo el alto del navegador */
+   background-color: rgb(34, 217, 145);
+    display: grid;
+    /* gap: 1rem;  separa las areas */
+    /*grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);*/
+    grid-template-rows: 1fr 2fr 2fr 1.5fr 1fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    /*border: 1px solid black;*/
+
+    
+    grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "section-uno section-uno section-uno section-uno"
+      "footer footer footer footer"
+    ;
+       
+}
+
+
+
+
+/* menu var =============*/
+.container-fluid {
+    background-color: rgb(184, 179, 174);
+    display: flex;
+    justify-content:space-between;
+}
+ 
+header{
+    overflow: hidden;
+    grid-area: header;
+    background-color:rgb(184, 179, 174) ;
+    height: 100px;
+    width: 100%;
+    
+}
+ 
+#menu {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#menu li > a {
+    font-size: 18px;
+    font-weight:initial;
+}
+
+.logo-nav{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+
+  }  
+
+.texto-nav {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+}
+
+main {
+    grid-area: main;
+    background-color:white ;
+   
+}
+section {
+    padding: 10px;
+    grid-area: section;
+    background-color: seashell;
+    
+}
+
+#eslogan {
+    
+    background-image: url(Render1LivingComedor.jpg);
+    /* background-image: url("images/EdificioArtes/SUM.jpg"); 
+    background-image: url("https://picsum.photos/700/400?random"); */
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;   
+    /* color:rgb(34, 217, 145) ; */
+    color:rgb(184, 179, 174); 
+     
+}
+
+footer {
+    background-color: black;
+    min-height: 100px;
+    grid-area: footer;
+   
+}
+
+footer p {
+    color: rgb(184, 179, 174);  
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0px 8px;
+    color: rgb(184, 179, 174); ;
+}
+/* clases */
+.section-uno {
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center ; 
+    grid-area: section-uno;
+    
+}
+
+
+.section-dos {
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center; 
+    grid-area: section-dos;
+}
+.section-tres {
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center; 
+    grid-area: section-tres;
+}
+
+.carousel-inner {
+    max-height: 30rem;
+   
+}
+
+.carousel-item {
+    background-size: contain;
+}
+/*
+.uno {
+        grid-area: area-uno;
+        border: 1px solid black;
+        font-style: italic;
+        font-family: fantasy ;
+        
+}
+.section-dos {
+    grid-area: area-dos;
+    border: 1px solid black;
+}
+.section-tres {
+    grid-area: area-tres;
+    border: 1px solid black;
+}
+
+*/
+/* defino alto y ancho de las imagenes q van en la grilla 
+.grid-img {
+    width: 100px;
+    height: 200px;
+}
+*/
+/* Fin Header */
+
+   /*
+   #encabezado {
+    background-color: lightseagreen;
+    width: 100%;
+    }
+
+   #menuhorizontal {
+        list-style-type:none;
+        padding-left: 20px;
+       
+    } 
+    
+    #menuhorizontal a { 
+    width:150px;
+    height: 50px;
+    text-decoration:none;
+    text-align:center;
+    align-content: center;
+    color: grey;
+    background-color:#f7f8e8; 
+    border-right:1px solid black;
+    display:block; 
+    float: left;
+    }
+   
+    a {
+        cursor: pointer; 
+    }
+
+    .imgagenServicios {
+        height: 20rem;
+    }
+    
+    .sectionEslogan {
+        background-image: url("images/EdificioAmics/Render1_LivingComedor.jpg");
+        padding: 20px;
+        display: flex;
+        
+        justify-content: space-around;
+        border: 2px solid black;
+    }
+  
+    .sectionExperiencia {
+        padding-left: 50px;
+        padding-top: 80px;
+        border: 2px solid darkseagreen;
+        background-color: bisque;
+    }
+   
+    li {
+    float: left;
+    }
+    
+
+.paragraph-experiencia {
+    color: grey ;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+    align-content: center;
+    padding: 20px;
+}
+
+.socials li {
+    margin-right: 12px;
+}
+
+.footer-container {
+    color: white;
+    background-color: blueviolet;
+    padding: 20px 20px 20px 20px;
+     
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-socials {
+    border: 1px solid beige;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+*/
