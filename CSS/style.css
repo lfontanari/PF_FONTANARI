@@ -26,7 +26,7 @@
 /* fin fonts ================================================================= */
 
 /* Media Queries Pantalla SM ================================================= */
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 992px) {
     #eslogan {
         width: 80%;
     }
@@ -36,26 +36,31 @@
         text-align: center;
     }
 
-    .contacto-wrapper {
-       display: grid;
-       grid-template-columns: 1fr;
-       text-align: center;
+    .tel-box , .mail-box,  .dom-box , .horario-box {
+       display: none;
     }
+    .contacto-wrapper {
+       
+        grid-template-columns: 1fr !important;
+        margin-top: 20rem;
+        gap: 1rem;
+    }
+    .contacto-mapa iframe {
+        height: 400px !important;
+    }
+  
+}
 
-   
-}
-/* =========================================================================== */
-/* Header */
-/*width: 90%;*/
-/* Activar flexbox */
-/*
-li {
-    border: 1px solid #fff;
-    background-color: yellow;
+.top-bar {
     display: flex;
-   justify-content: space-around;
+    justify-content: space-between;
+    background-color: rgb(184, 179, 174);
+    max-height: 30px;
+    padding-right: 15px;
 }
-*/
+
+/* =========================================================================== */
+
 
 
 .verde-jms {
@@ -71,51 +76,35 @@ li {
     color: rgb(255, 255, 255);
 }
 
-.grid-container {
-   height: 100vh;    /* todo el alto del navegador */
-    display: grid;
-    /* gap: 1rem;  separa las areas */
-    /*grid-template-rows: repeat(4,1fr);
-    grid-template-columns: repeat(4, 1fr);*/
-    grid-template-rows: 1fr 2fr 2fr 1.5fr 1fr;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-    /*border: 1px solid black;*/
-
-    
-    grid-template-areas: 
-      "header header header header"
-      "main main main main"
-      "section-uno section-uno section-uno section-uno"
-      "footer footer footer footer"
-    ;
-       
-}
-
-
-
 
 /* menu var =============*/
+
 .container-fluid {
     background-color: rgb(184, 179, 174);
     display: flex;
     justify-content:space-between;
 }
  
-header{
-    overflow: hidden;
-    grid-area: header;
-
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color:rgb(29,29,27);
-    color: white;
-    
-    height: 100px;
+    min-height: 100px;
     width: 100%;
-    
 }
- 
+
+.header a {
+    color: rgb(184, 179, 174); 
+}
+.logo img {
+    height: 150px;
+}
+
+
 #menu {
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-end;
     align-items: center;
     text-align: center;
    
@@ -126,52 +115,25 @@ header{
     font-weight:initial;
 }
 
-.logo-nav{
-    display: flex;
-    color: white;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: baseline;
-
-  }  
-
-.texto-nav {
-    display: flex;
-    justify-content: space-around;
-    float: right;
-}
 
 main {
-    grid-area: main;
     background-color:white ;
    
 }
-/*
-section {
-    padding: 10px;
-    grid-area: section;
-    background-color: seashell; 
-    
-}*/
+
 
 #eslogan {
     
     background-image: url(Render1LivingComedor.jpg);
-    /* background-image: url("images/EdificioArtes/SUM.jpg"); 
-    background-image: url("https://picsum.photos/700/400?random"); */
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;   
-    /* color:rgb(34, 217, 145) ; */
     color:rgb(184, 179, 174); 
-     
 }
 
 footer  {
     background-color:rgb(29,29,27);
-    min-height: 70px;
-    grid-area: footer;
+    min-height: 90px;
     width: 100%;
 }
 
@@ -190,26 +152,17 @@ footer p {
     background-repeat: no-repeat;
     background-size: contain;    
     background-position: center ; 
-    grid-area: section-uno;
-    
 }
 
 
 .carousel-inner {
     max-height: 30rem;
-   
 }
 
 .carousel-item {
     background-size: contain;
 }
 
-#contenedor-formulario {
-   
-    background-color: rgb(255, 255, 255);
-    max-width: 500px;
-    
-}
 
 #titulo-formulario {
     color: rgb(184, 179, 174); 
@@ -230,7 +183,6 @@ footer p {
 .contacto-form form button {
     background-color: rgb(34, 217, 145) ;
     border: 0;
-    
 }
 
 .contacto-form form button:hover,
@@ -243,16 +195,29 @@ footer p {
 .contacto-mapa {
     border: 2px;
 }
+.contacto-mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-formulario {
+    background-color: rgb(255, 255, 255);
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
 
 .contacto-wrapper {
+    box-shadow: 0 0 20px 0 rgba(34,217,145, 0.2);
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.dropdown-menu a {
-       
-    display: block;
-    color: rgb(184, 179, 174);
-    text-align: center;
-    padding: 2px 2px;  
-}

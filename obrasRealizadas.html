@@ -17,27 +17,35 @@
 </head>
 <body>
 
-<div class="grid-container" >
-<!-- HEADER -->
-<header class="container-fluid d-flex  justify-content-space-center"> 
-   
-  <img  src="images/Logos/logo-jms.jpeg" alt="JMS"  >
-  <div class="p-2 w-25">
-  <p> <i class="bi bi-telephone p-3"></i>Contactanos al +54 (221) 545-0753</p>
-  <p> <i class="bi bi-envelope p-3"> </i>jmsconstructora@yahoo.com</p>
+
+
+<!-- TOP BAR-->
+<div class="top-bar">
+  <div class="tel-box ">
+    <p class="border-start"> <i class="bi bi-telephone p-3"></i>Contactanos al +54 (221) 545-0753</p>
   </div>
-  <!--<p class="border-start border-2 p-3 w-25"> contactanos al 221-4566666 / mail</p> -->
-  <p class="border-start border-2 p-3 w-25"> <i class="bi bi-house p-3"></i> Av. 44 #1387 - La Plata</p>
-  <p class="border-start border-2 p-3 w-25"> <i class="bi bi-stopwatch p-3"></i>Lu-Vi 8AM-5PM</p>
- 
-</header>
-<!-- FIN HEADER -->
+  <div class="mail-box">
+    <p class="border-start "> <i class="bi bi-envelope p-3"> </i>jmsconstructora@yahoo.com</p>
+  </div>
+  <div class="dom-box ">
+    <p class="border-start "> <i class="bi bi-house p-3"></i> Av. 44 #1387 - La Plata</p>
+  </div>
+  <div class="horario-box ">
+    <p class="border-start "> <i class="bi bi-stopwatch p-3"></i>Lu-Vi 8AM-5PM</p>
+  </div>
+</div>
+<!-- FIN TOP BAR-->
 
-<!-- MAIN-->
-<main>
+<!-- HEADER -->
+<header class="header">
 
-    <nav class="navbar navbar-expand-lg " id="menu">
-        <div class="container-fluid">
+   <div class="logo w-50">
+     <img  src="images/Logos/logo-jms.jpeg"  alt="logo JMS">
+   </div>
+
+   <nav class="navbar navbar-dark  navbar-expand-lg w-50 " >
+
+    <div class="container" id="menu">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -77,52 +85,59 @@
       </div>
     </div>
   </nav>
+  
+</header>
+<!-- FIN HEADER -->
 
-</main>
+ <!-- MAIN-->
+<main>
 
-
+   
         <!-- CARROUSEL DE IMAGENES-->
         <div id="carouselEdArtes" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <img src="./images/EdificioArtes/Cocina.jpg"  class="img-fluid" alt="Cocina">   <!-- class="d-block w-100 h-50" -->
-              </div>
-
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./images/EdificioArtes/Living.jpg" class="img-fluid" alt="Living">
-              </div>
-
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./images/EdificioArtes/SUM.jpg" class="img-fluid" alt="Sum" >
-              </div>
-              
-
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./images/EdificioArtes/Cocina.jpg"  class="img-fluid" alt="Cocina">   <!-- class="d-block w-100 h-50" -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEdArtes" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselEdArtes" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-   
-  
 
-    <!-- FOOTER-->
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/EdificioArtes/Living.jpg" class="img-fluid" alt="Living">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/EdificioArtes/SUM.jpg" class="img-fluid" alt="Sum" >
+            </div>
+            
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEdArtes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEdArtes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+ 
+
+
+</main>
+<!-- FIN MAIN-->
+
+
+
+<!-- FOOTER-->
 <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap"> 
-   <p class="fs-6 pt-3 px-3">JMS - Todos los derechos reservados 2023   </p>
-   <div id="iconos">
-    <a href="https://www.instagram.com/jmsconstructora/" target="_blank"> <i class="bi bi-instagram"></i></a>
-    <a href="#"><i class="bi bi-facebook"></i></a>
-    <a href="https://wa.me/542215450753?text=¡Estoy+interesado!" target="_blank"> <i class="bi bi-whatsapp"></i></a>
-  </div> 	
+  <p class="fs-6 pt-3 px-3">JMS - Todos los derechos reservados &copy; 2023   </p>
+  <div id="iconos">
+   <a href="https://www.instagram.com/jmsconstructora/" target="_blank"> <i class="bi bi-instagram"></i></a>
+   <a href="#"><i class="bi bi-facebook"></i></a>
+   <a href="https://wa.me/542215450753?text=¡Estoy+interesado!" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+ </div> 	
 </footer>
 <!-- FIN FOOTER-->
-
-</div> <!-- FIN grid-container-->
 
    <!-- Boostrap script-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

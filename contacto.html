@@ -16,83 +16,87 @@
     <title>Contacto</title>
 </head>
 <body>
-
-<div class="grid-container" >
-  <!-- HEADER -->
-  
-  <header class="container-fluid d-flex  justify-content-space-center"> 
-   
-    <img  src="images/Logos/logo-jms.jpeg" alt="JMS"  >
-    <div class="p-2 w-25">
-    <p> <i class="bi bi-telephone p-3"></i>Contactanos al +54 (221) 545-0753</p>
-    <p> <i class="bi bi-envelope p-3"> </i>jmsconstructora@yahoo.com</p>
-    </div>
-    <!--<p class="border-start border-2 p-3 w-25"> contactanos al 221-4566666 / mail</p> -->
-    <p class="border-start border-2 p-3 w-25"> <i class="bi bi-house p-3"></i> Av. 44 #1387 - La Plata</p>
-    <p class="border-start border-2 p-3 w-25"> <i class="bi bi-stopwatch p-3"></i>Lu-Vi 8AM-5PM</p>
-   
-</header>
-  
-
-  
-  <!-- FIN HEADER -->
-
-  <!-- MAIN-->
-  <main>
-
-      <nav class="navbar navbar-expand-lg " id="menu">
-          <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu" >
-                <li ><a class="dropdown-item" href="servicios.html">Servicios UNO</a></li>
-                <li><a class="dropdown-item" href="#">Servicios DOS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Servicios TRES</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="obrasRealizadas.html">Obras Realizadas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-            
-          </ul>
-        
-        </div>
-      </div>
-    </nav>
-  
-
-<div class="contenedor-formulario">
-  <div id="titulo-formulario" class="text-center mb-4">
-        
-    <h2>Contactos</h2>
-    <p class="fs-5">Por favor dejanos tu mensaje y nos comunicaremos a la brevedad.</p>
-
+<!-- TOP BAR-->
+<div class="top-bar">
+  <div class="tel-box ">
+    <p class="border-start"> <i class="bi bi-telephone p-3"></i>Contactanos al +54 (221) 545-0753</p>
   </div>
+  <div class="mail-box">
+    <p class="border-start "> <i class="bi bi-envelope p-3"> </i>jmsconstructora@yahoo.com</p>
+  </div>
+  <div class="dom-box ">
+    <p class="border-start "> <i class="bi bi-house p-3"></i> Av. 44 #1387 - La Plata</p>
+  </div>
+  <div class="horario-box ">
+    <p class="border-start "> <i class="bi bi-stopwatch p-3"></i>Lu-Vi 8AM-5PM</p>
+  </div>
+</div>
+<!-- FIN TOP BAR-->
 
-  <div class="contacto-wrapper">
-        <div class="contacto-form">
+<!-- HEADER -->
+<header class="header">
+
+   <div class="logo w-50">
+     <img  src="images/Logos/logo-jms.jpeg"  alt="logo JMS">
+   </div>
+
+   <nav class="navbar navbar-dark  navbar-expand-lg w-50 " >
+
+    <div class="container" id="menu">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="servicios.html">Servicios UNO</a></li>
+              <li><a class="dropdown-item" href="#">Servicios DOS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Servicios TRES</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="obrasRealizadas.html">Obras Realizadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  
+</header>
+<!-- FIN HEADER -->
+
+<!-- MAIN-->
+<main>
+ <div class="contenedor-formulario">
+
+    <div id="titulo-formulario" class="text-center mb-4">
+      <h2>Contactos</h2>
+      <p class="fs-5">Por favor dejanos tu mensaje y nos comunicaremos a la brevedad.</p>
+    </div>
+
+    <div class="contacto-wrapper">
+      <div class="contacto-form">
 
         <form action="">
           <div class="mb-3">
@@ -114,7 +118,8 @@
       </div>
       <div class="contacto-mapa mb-3">
        
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.250568879418!2d-57.97372758255616!3d-34.9252523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7cfdf8e317d%3A0xcee09d6b6257ad41!2sAv.%2044%201387%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682565338016!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.250568879418!2d-57.97372758255616!3d-34.9252523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7cfdf8e317d%3A0xcee09d6b6257ad41!2sAv.%2044%201387%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682565338016!5m2!1ses!2sar" 
+           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       
       </div>
     </div>
@@ -123,18 +128,17 @@
 </main>
 <!-- FIN MAIN-->
 
-  <!-- FOOTER-->
-  <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap"> 
-    <p class="fs-6 pt-3 px-3">JMS - Todos los derechos reservados 2023   </p>
-    <div id="iconos">
-      <a href="https://www.instagram.com/jmsconstructora/" target="_blank"> <i class="bi bi-instagram"></i></a>
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="https://wa.me/542215450753?text=¡Estoy+interesado!" target="_blank"> <i class="bi bi-whatsapp"></i></a>
-    </div> 	   
-  </footer>
-  <!-- FIN FOOTER-->
 
-</div> <!-- FIN grid-container-->
+<!-- FOOTER-->
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap"> 
+  <p class="fs-6 pt-3 px-3">JMS - Todos los derechos reservados &copy; 2023   </p>
+  <div id="iconos">
+   <a href="https://www.instagram.com/jmsconstructora/" target="_blank"> <i class="bi bi-instagram"></i></a>
+   <a href="#"><i class="bi bi-facebook"></i></a>
+   <a href="https://wa.me/542215450753?text=¡Estoy+interesado!" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+ </div> 	
+</footer>
+<!-- FIN FOOTER-->
 
     <!-- Boostrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
