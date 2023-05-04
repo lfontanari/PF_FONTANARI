@@ -44,6 +44,7 @@
         grid-template-columns: 1fr !important;
         margin-top: 20rem;
         gap: 1rem;
+      
     }
     .contacto-mapa iframe {
         height: 400px !important;
