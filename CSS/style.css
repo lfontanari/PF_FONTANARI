@@ -50,6 +50,18 @@
         height: 400px !important;
     }
   
+    #datos-contacto {
+        display: block !important;
+        padding: 5px 5px;
+
+    }
+    #datos-contacto ul li a {
+        color:  rgb(184, 179, 174);
+    }
+}
+
+#datos-contacto {
+    display: none;
 }
 
 .top-bar {
