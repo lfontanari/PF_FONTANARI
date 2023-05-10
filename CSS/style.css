@@ -134,6 +134,13 @@ main {
    
 }
 
+#titulo-servicio {
+    background-image: url(huecos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;   
+    color: white; 
+}
 
 #eslogan {
     
