@@ -1,0 +1,41 @@
+@import "../base/variables";
+@import "../base/listas";
+
+
+/* menu var =============*/
+
+.container-fluid {
+    background-color: $gris-jms;
+    display: flex;
+    justify-content:space-between;
+}
+ 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $negro-jms;
+    min-height: 100px;
+    width: 100%;
+}
+
+.header a {
+    color: $gris-jms; 
+}
+.logo img {
+    height: $altura-logo;
+}
+
+
+#menu {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#menu li > a {
+    font-size: nth ($size, 1);
+    font-weight:initial;
+}

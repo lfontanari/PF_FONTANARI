@@ -1,0 +1,18 @@
+@import "../base/variables.scss";
+
+@mixin marco ($color, $bgimag) {
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    color: $color;
+    background-image: $bgimag;
+}
+
+
+#eslogan {
+    @include marco($gris-jms, url(Render1LivingComedor.jpg));   
+}
+
+#titulo-servicio {
+    @include marco ($blanco-jms,url(huecos.jpg));
+}

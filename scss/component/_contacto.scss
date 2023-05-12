@@ -1,0 +1,66 @@
+@import "../base/variables";
+@import "../base/listas";
+
+
+
+
+#titulo-formulario {
+    color: $gris-jms;
+    text-align: center;
+}
+
+.contacto-wrapper > * {
+    padding: 1em;
+
+}
+
+.contacto-form form input,
+.contacto-form form textarea,
+.contacto-form form button {
+    width: 90%;
+}
+
+.contacto-form form button {
+    background-color: lighten($verde-jms, 20%) ;
+    border: 0;
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus {
+    background-color: $gris-jms;
+    color: $blanco-jms;
+    
+}
+
+.contacto-mapa {
+    border: 2px;
+}
+.contacto-mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-formulario {
+    background-color: $blanco-jms;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.contacto-wrapper {
+    box-shadow: 0 0 20px 0 rgba(34,217,145, 0.2);
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#datos-contacto {
+    display: none;
+}

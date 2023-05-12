@@ -1,0 +1,21 @@
+@import "../base/variables";
+@import "../base/listas";
+
+
+footer  {
+    background-color: $negro-jms;
+
+    min-height: 90px;
+    width: 100%;
+}
+
+footer p {
+    color: $gris-jms;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: nth ($size, 2);
+    padding: 0px 8px;
+    color: $gris-jms;
+}

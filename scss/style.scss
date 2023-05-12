@@ -1,0 +1,29 @@
+
+@import "component/mediaQueries";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import "base/mixins";
+
+@import "component/topBar";
+
+@import "component/header";
+
+@import "component/footer";
+
+@import "component/contacto";
+
+@import "component/galeriaImag";
+
+@import "component/carousel";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    background-color:white ;
+   
+}
