@@ -1,0 +1,5 @@
+# Ignora los json
+*.json
+
+# Ignora los archivos SASS
+scss
