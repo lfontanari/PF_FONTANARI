@@ -20,16 +20,17 @@
 .carousel-item img {
     width: 100%;
     height: 600px;
-    object-fit: cover;
+    object-fit:inherit;  
+    
 }
 .slide {
     position: relative; 
-    width: 100%px;
+    width: 100%;
     height: 600px;
 }
 
 #carouselImagenes:nth-child(1)
 {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
 }

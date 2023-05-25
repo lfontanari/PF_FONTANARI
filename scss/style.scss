@@ -17,13 +17,30 @@
 
 @import "component/carousel";
 
+@import "component/imgServicios";
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-
 main {
     background-color:white ;
    
 }
+#eslogan {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(184, 179, 174);
+    background-image: url(../images/EdificioAmics/Render1livingcomedor.jpg);
+  }
+  
+#titulo-servicio {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    background-image: url(../images/Servicios/huecos.jpg);
+  }
